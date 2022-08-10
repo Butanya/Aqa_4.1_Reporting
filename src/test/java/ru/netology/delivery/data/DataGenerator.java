@@ -14,6 +14,7 @@ public class DataGenerator {
     }
 
     static Faker faker = new Faker(new Locale("ru"));
+
     public static String generateDate(int shift) {
         String date = LocalDate.now().plusDays(shift).format(DateTimeFormatter.ofPattern("dd.MM.yyyy"));
         return date;
